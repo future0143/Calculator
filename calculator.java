@@ -24,7 +24,7 @@ public class Main {
         int b = Integer.parseInt(str[2]);
         int result = 0;
 
-        if ((a < 1) && (a > 10) && (b < 1) && (b > 10)) {    
+        if ((a < 1) || (a > 10) || (b < 1) || (b > 10)) {    
             throw new IOException();
         }
         if (!operator.equals("+") && !operator.equals("-") && !operator.equals("*") && !operator.equals("/")) {
